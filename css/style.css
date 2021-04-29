@@ -1,0 +1,139 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+:root {
+    --bg-color: #101820FF;
+    --text-color: #F2AA4CFF;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Khula', sans-serif;;
+}
+body {
+    background-color: var(--bg-color);
+}
+
+.Nav-bar .logo{
+    /* margin: 0.8rem; */
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.Nav-bar .logo span{
+    font-family: 'Shadows Into Light', cursive;
+    color: var(--text-color);
+}
+.Nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.fa-bars ,.fa-times{
+    color: var(--text-color)
+}
+
+.Nav-bar .mainMenu {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px; 
+}
+
+.Nav-bar .mainMenu li{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Nav-bar .mainMenu li a {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid var(--bg-color);
+}
+.Nav-bar .mainMenu li a:hover {
+    border: 2px dashed var(--text-color);
+}
+
+
+
+.Nav-bar .openMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    /* margin: auto 30px;  */
+}
+.Nav-bar .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook{ color: var(--text-color)}
+.fa-twitter{ color: var(--text-color)}
+.fa-instagram{ color: var(--text-color)}
+.fa-github{ color: var(--text-color)}
+.fa-linkedin{ color: var(--text-color)}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+.fa-linkedin:hover {color: rgb(58, 86, 122);}
+
+@media(max-width: 800px){
+    .Nav-bar .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--bg-color);
+        transition: top 1s ease;
+        display: none;
+    }
+    .Nav-bar .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    .Nav-bar .openMenu {
+        display: block;
+    }
+    .Nav-bar .mainMenu li a:hover {
+        background: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+
+
+
+
+
