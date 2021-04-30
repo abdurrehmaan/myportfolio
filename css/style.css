@@ -225,7 +225,7 @@ body {
 
 .about-section .s-tools {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .about-section .s-tools ul {
@@ -345,6 +345,12 @@ body {
     }
 }
 
+@media (max-width: 328px){
+    
+    .about-section .s-tools ul li {
+        font-size: 0.8rem;
+    }
+}
 
 
 
