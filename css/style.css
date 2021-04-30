@@ -17,7 +17,7 @@
 body {
     background-color: var(--bg-color);
 }
-
+/* nav start here */
 .Nav-bar .logo{
     /* margin: 0.8rem; */
     font-size: 25px;
@@ -28,6 +28,11 @@ body {
     font-family: 'Shadows Into Light', cursive;
     color: var(--text-color);
 }
+
+.Nav-bar .logo span:hover{
+    color: #fff;
+}
+
 .Nav-bar {
     width: 100%;
     display: flex;
@@ -69,6 +74,7 @@ body {
 }
 .Nav-bar .mainMenu li a:hover {
     border: 2px dashed var(--text-color);
+    color: #fff;
 }
 
 
@@ -77,25 +83,76 @@ body {
     font-size: 2rem;
     display: none;
     cursor: pointer;
-    /* margin: auto 30px;  */
 }
 .Nav-bar .mainMenu .closeMenu , .icons i {
     font-size: 2rem;
     display: none;
     cursor: pointer;
+    
 }
+
 
 .fa-facebook{ color: var(--text-color)}
 .fa-twitter{ color: var(--text-color)}
 .fa-instagram{ color: var(--text-color)}
 .fa-github{ color: var(--text-color)}
 .fa-linkedin{ color: var(--text-color)}
-.fa-facebook:hover {color: rgb(0, 110, 255);}
-.fa-twitter:hover {color: rgb(86, 154, 243);}
-.fa-instagram:hover {color: rgb(255, 0, 191);}
-.fa-github:hover {color: rgb(255, 123, 0);}
-.fa-linkedin:hover {color: rgb(58, 86, 122);}
+.fa-facebook:hover {color: #fff ;}
+.fa-twitter:hover {color:  #fff ;}
+.fa-instagram:hover {color: #fff ;}
+.fa-github:hover {color:  #fff ;}
+.fa-linkedin:hover {color: #fff ;}
 
+/* Nav ends here */
+
+/* Email section */
+.email-section {
+    height:100vh;
+    position: fixed;
+    margin-left: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.email-section span {
+    transform: rotate(90deg);
+    color: var(--text-color);
+    font-size: 25px;
+    word-spacing: 1rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.email-section span:hover{
+    color: #fff;
+}
+
+/* social media section */
+.media-icons{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.media-icons i {
+    font-size: 25px;
+    margin-bottom: 25px;
+    border: 2px dashed var(--text-color);
+    padding: 10px;
+}
+
+.media-icons i:hover {
+    padding: 10px;
+    border: 2px dashed #fff;
+}
+
+/* Media Qurries section */
+
+/* Navbar */
 @media(max-width: 800px){
     .Nav-bar .mainMenu {
         height: 100vh;
@@ -130,7 +187,25 @@ body {
         display: inline-block;
         padding: 12px;
     }
+    
 }
+
+@media (max-width: 768px){
+    
+    /* email sections */
+    .email-section{
+        display: none;
+    }
+    .media-icons{
+        display: none;
+    }
+    .main-sections{
+        width: 100%;
+        margin-left: -17%;
+        background-color: blue;
+    }
+}
+
 
 
 
