@@ -5,6 +5,9 @@
 :root {
     --bg-color: #101820FF;
     --text-color: #F2AA4CFF;
+    --font1: #CCD6F6;
+    --font2: #d1d1d1;
+    --titlefont: 'Shadows Into Light', cursive;
 }
 
 
@@ -12,10 +15,11 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Khula', sans-serif;;
 }
 body {
     background-color: var(--bg-color);
+    font-family: 'Khula', sans-serif;
+
 }
 /* nav start here */
 .Nav-bar .logo{
@@ -149,6 +153,27 @@ body {
     padding: 10px;
     border: 2px dashed #fff;
 }
+
+/* basic info */
+.basic-info{
+    display: flex;
+    flex-direction: column ;
+    padding: 0px 10rem;
+}
+
+.basic-info h1 {
+    font-family: var(--titlefont);
+    color: #fff;
+}
+
+.basic-info h1:hover {
+   color: var(--text-color)
+}
+
+.basic-info span, h2, p {
+    color: var(--font2);
+}
+
 
 /* Media Qurries section */
 
