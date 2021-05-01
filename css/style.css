@@ -204,6 +204,12 @@ body {
 }
 
 /* about section */
+#about-section{
+    height: 100vh;
+}
+.about-section{
+  margin: auto;
+}
 
 .about-section .about-info span{
     font-family: var(--titlefont);
@@ -251,7 +257,7 @@ body {
     border-radius: 10px;
     transition: 0.5 ease;
     backface-visibility: hidden;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     background-color: var(--text-color);
 }
 
@@ -272,10 +278,10 @@ body {
     height: 300px;
     border: 3px solid var(--text-color);
     border-radius: 10px;
-    margin: 75px 0px 0px 30px;
+    margin: 20px 0px 0px 30px;
 }
 .about-image .abdur-rehman-image:hover ~.image-border {
-    margin: 50px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     transition: 0.3s ease-in-out;
  }
 
