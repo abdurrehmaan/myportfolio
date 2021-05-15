@@ -205,10 +205,10 @@ body {
 
 /* about section */
 #about-section{
-    /* height: 100vh; */
+    height: 100vh;
 }
 .about-section{
-  /* margin: auto; */
+  margin: auto;
 
 }
 
@@ -248,8 +248,9 @@ body {
 .about-image{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0px;
+    background: yellow;
 }
 .about-image .abdur-rehman-image {
     width: 300px;
@@ -287,9 +288,29 @@ body {
  }
 /* experience tabs */
 
+.experience {
+    height: 100vh;
+    margin-top: 150px;
 
+}
+.experience #myTab {
+    display: flex;
+    justify-content: space-around;
+}
 
+.experience #myTab li button {
+   color: #000;
+   background: white;
+}
 
+.experience #myTab li button:focus {
+    color: var(--bg-color);    
+    background: var(--text-color);
+  }
+
+#item1 {
+    
+}
 
 /* _________________________________________________________________________________________
  */
