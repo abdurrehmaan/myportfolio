@@ -285,6 +285,12 @@ body {
     transition: 0.3s ease-in-out;
  }
 /* experience tabs */
+.tabs{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .experience {
     height: 100vh;
@@ -292,6 +298,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
 }
 .experience ul{
     display: flex;
@@ -336,9 +343,39 @@ body {
     color: var(--text-color);
 }
 
+/* skilss */
+.skills{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-#table {
-    background-color:  #101820FF;
+.skill-icon-bg{
+    /* background-color: red; */
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+
+
+  
+}
+
+.skill-icon-bg .skill-icon {
+    background-color: var(--font2);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.skill-icon-bg .skill-icon i {
+    font-size: 5rem;
+}
+.skill-icon-bg  span {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 /* _________________________________________________________________________________________
