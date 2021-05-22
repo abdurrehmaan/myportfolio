@@ -343,6 +343,20 @@ body {
     color: var(--text-color);
 }
 
+.table{
+    color: white;
+    margin-top: 3rem;
+}
+
+.table thead tr{ 
+    color: var(--text-color)
+}
+
+.table tbody tr:hover{
+    /* color:var(--text-color); */
+    background-color:var(--font2);
+}
+
 /* skilss */
 /* .skills{
     height: 100vh;
