@@ -303,6 +303,13 @@ body {
     margin: -1px 20px;
 }
 
+.experience-section .e-title{
+    font-size: 2.5rem;
+    font-family: var(--titlefont);
+    color: var(--text-color);
+    margin-left:5%;
+}
+
 .experience ul li button {
     border: 2px solid white;
     padding: 10px 20px;
@@ -323,6 +330,15 @@ body {
 .experience ul li .active {
     background-color: var(--font1);
     color: var(--bg-color);
+}
+
+.tab-content div {
+    color: var(--text-color);
+}
+
+
+#table {
+    background-color:  #101820FF;
 }
 
 /* _________________________________________________________________________________________
