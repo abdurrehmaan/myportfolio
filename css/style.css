@@ -10,7 +10,6 @@
     --titlefont: 'Shadows Into Light', cursive;
 }
 
-
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -171,7 +170,7 @@ body {
 .main-sections .basic-info{
     display: flex;
     flex-direction: column ;
-    padding: 0px 10rem;
+
 }
 
 .basic-info h1 {
@@ -204,11 +203,14 @@ body {
 }
 
 /* about section */
-
-.about-section{
-  margin: auto;
-
+#about-section{
+    display: flex;
+    justify-content: space-between;
 }
+.about-section{
+    width:60%;
+}
+
 
 .about-section .about-info span{
     font-family: var(--titlefont);
@@ -220,44 +222,44 @@ body {
     font-size: 3rem;
     font-family: var(--titlefont);
     color: var(--text-color);
-    margin-left:5%;
+
 }
 
 .about-section p, .about-section ul{
-    padding: 0% 10%;
     color: var(--font1);
 }
 
 .about-section .s-tools {
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 .about-section .s-tools ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .about-section .s-tools ul li {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* about section image */
 
 .about-image{
+    width: 40%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 40px 0px;
+    align-items: center;
+
  
 }
 .about-image .abdur-rehman-image {
     width: 300px;
-    position: absolute;
     height: 300px;
     border-radius: 10px;
     transition: 0.5 ease;
-    backface-visibility: hidden;
-    /* margin-top: 50px; */
+    /* backface-visibility: hidden; */
     background-color: var(--text-color);
 }
 
@@ -266,26 +268,22 @@ body {
     height: 100%;
     border-radius: 10px;
     opacity: 0.6; 
-  
 } 
 
 .about-image .abdur-rehman-image img:hover{
     opacity: 1;
     transition: 0.3s ease-in-out;
 }
-.image-border{
-    width: 300px;
-    height: 300px;
-    border: 3px solid var(--text-color);
-    border-radius: 10px;
-    margin: 20px 0px 0px 30px;
-}
+
 .about-image .abdur-rehman-image:hover ~.image-border {
     margin: 0px 0px 0px 0px;
     transition: 0.3s ease-in-out;
  }
-/* experience tabs */
-.tabs{
+
+
+
+/* old experience tabs */
+/* .tabs{
 
     display: flex;
     justify-content: center;
@@ -351,12 +349,7 @@ body {
 .table thead tr{ 
     color: var(--text-color)
 }
-
-.table tbody tr:hover{
-    /* color:var(--text-color); */
-    background-color:var(--font2);
-}
-
+/* OLD EXPERIENCE TAB CSS */
 /* skilss */
 /* .skills{
     height: 100vh;
@@ -394,6 +387,14 @@ body {
 /* Media Qurries section */
 @media (max-width:1100px)
 {
+    .about-image{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 50px;
+     
+    }
     .about-image .abdur-rehman-image {
         width: 250px;
         height: 250px;
@@ -454,9 +455,19 @@ body {
         width: 350px;
         height: 350px;
     }
+    #about-section{
+        margin: 20px;
+    }
     .image-border{
         width: 350px;
         height: 350px;
+    }
+    .about-image{
+        width: 100%
+    }
+    .about-section{
+
+        width:100%;
     }
 }
 
