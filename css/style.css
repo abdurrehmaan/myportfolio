@@ -279,8 +279,39 @@ body {
     margin: 0px 0px 0px 0px;
     transition: 0.3s ease-in-out;
  }
-
-
+/* experience new code */
+.experience-section{
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+ .experience-section .e-title{
+    font-size: 2.5rem;
+    font-family: var(--titlefont);
+    color: var(--text-color);
+}
+/* project section */
+.Projects{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .Projects-section .p-title{
+    font-size: 2.5rem;
+    font-family: var(--titlefont);
+    color: var(--text-color);
+}
+.project-list{
+    display: flex;
+    justify-content: center;
+}
+.project-box{
+    width: 300px;
+    background-color: red;
+    height: 300px;
+}
 
 /* old experience tabs */
 /* .tabs{
