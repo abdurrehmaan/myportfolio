@@ -13,8 +13,8 @@ table {
   }
   
   table tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
     padding: .35em;
   }
   
