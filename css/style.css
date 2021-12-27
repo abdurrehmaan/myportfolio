@@ -280,7 +280,7 @@ body {
  }
 /* experience new code */
 .experience{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,7 +293,7 @@ body {
 }
 /* Project Built */
 .Projects-built{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -441,8 +441,19 @@ body {
     color: var(--text-color)
 }
 
+.contact-us-section{
+    min-height: 100vh;
+}
+/* work section */
 
+#work-section{
+    min-height: 100vh;
+}
 
+/* experience-section */
+#experience-section{
+    height: 100vh;
+}
 
 /* _________________________________________________________________________________________
  */
