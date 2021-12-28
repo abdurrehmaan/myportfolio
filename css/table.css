@@ -17,6 +17,10 @@ table {
     border: 1px solid var(--bg-color);
     padding: .35em;
   }
+
+  table tr:hover{
+    color: var(--text-color);
+  }
   
   table th,
   table td {
