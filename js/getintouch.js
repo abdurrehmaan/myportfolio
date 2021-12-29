@@ -44,22 +44,27 @@ form.addEventListener('submit',(e)=>{
 
 const  emailsend=()=>{
     Email.send({
-        
-        SecureToken : "caba590a-d790-4496-ba6d-591b7b4e3d90",
+        Host : "smtp.gmail.com",
+        Username : "abdurrehmaan0@gmail.com",
+        // Password : "yfuiobtuotzavibt",
+        Password : "tnryrrwpislnopnt",
         To : txtemail.value.trim(),
         From : "abdurrehmaan0@gmail.com",
-        Subject : "GET IN TOUCH (IOMES)",
-        Body : `Hello <b> ${txtusername.value.trim()}</b>: <br> Thank you for contacting us.<br>We have recieved your email.<br>We will reply you very soon.<br><br> <b>Best Regards:</b><br><span>IOMES Group</span>`
+        Subject : "GET IN TOUCH - Abdur Rehman",
+        Body : `Hello <b> ${txtusername.value.trim()}</b>: <br> Thank you for contacting us.<br>We have recieved your email.<br>We will reply you very soon.<br><br> <b>Best Regards:</b><br><span>Abdur Rehman</span>`
     }).then(
     
     ).catch(err=>{
         console.log(err)
     })
     Email.send({
-        SecureToken : "caba590a-d790-4496-ba6d-591b7b4e3d90",
+        Host : "smtp.gmail.com",
+        Username : "abdurrehmaan0@gmail.com",
+        // Password : "yfuiobtuotzavibt",
+        Password : "tnryrrwpislnopnt",
         To : 'abdurrehmaan0@gmail.com',
         From : "abdurrehmaan0@gmail.com",
-        Subject : `GET IN TOUCH (IOMES)`,
+        Subject : `GET IN TOUCH- Abdur Rehman`,
         Body : `<b>${txtusername.value}</b> is trying to connect you through Get In Touch from this <b>Email: ${txtemail.value.trim()}</b> <br><br> ${txtmsg.value.trim()}  `
     }).then(
         
